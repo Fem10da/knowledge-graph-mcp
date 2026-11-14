@@ -19,7 +19,7 @@ flowchart LR
     A[AI assistant] --> M[MCP server]
     M --> DB[(Supabase: storage and vectors)]
     M --> E[Gemini embedding model]
-    T[Meeting transcript] --> TR[Transcription]
+    T[Meeting recording] --> TR[Transcription]
     TR --> AN[Analysis]
     AN --> M
 ```
@@ -42,7 +42,7 @@ Embeddings come from a Gemini embedding model and are stored as vectors in Supab
 - Add a project note.
 
 **Ingestion**
-- Meeting transcripts are transcribed, analysed, and ingested as nodes with reviewable evidence.
+- Meeting recordings are transcribed, analysed, and ingested as nodes with reviewable evidence.
 
 ## Status
 
